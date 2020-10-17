@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"uart\stm32l4xx_hal_pwr_ex.o"
+"uart\stm32l4xx_hal_dma.o"
+"uart\stm32l4xx_hal_flash_ex.o"
+"uart\stm32l4xx_hal_uart.o"
+"uart\stm32l4xx_hal_rcc_ex.o"
+"uart\stm32l4xx_hal_uart_ex.o"
+"uart\stm32l4xx_hal_pwr.o"
+"uart\stm32l4xx_hal.o"
+"uart\stm32l4xx_hal_tim_ex.o"
+"uart\stm32l4xx_hal_rcc.o"
+"uart\stm32l4xx_hal_cortex.o"
+"uart\stm32l4xx_hal_gpio.o"
+"uart\stm32l4xx_hal_dma_ex.o"
+"uart\stm32l4xx_hal_tim.o"
+"uart\stm32l4xx_hal_flash_ramfunc.o"
+"uart\stm32l4xx_hal_flash.o"
+"uart\stm32l4xx_hal_i2c.o"
+"uart\stm32l4xx_hal_i2c_ex.o"
+"uart\system_stm32l4xx.o"
+"uart\stm32l4xx_hal_msp.o"
+"uart\stm32l4xx_it.o"
+"uart\main.o"
+"uart\startup_stm32l476xx.o"
+--library_type=microlib --strict --scatter "UART\UART.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART.map" -o UART\UART.axf

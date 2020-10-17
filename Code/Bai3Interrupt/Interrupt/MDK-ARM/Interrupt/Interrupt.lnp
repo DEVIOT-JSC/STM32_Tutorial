@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"interrupt\stm32l4xx_hal_rcc_ex.o"
+"interrupt\stm32l4xx_hal_dma.o"
+"interrupt\stm32l4xx_hal_rcc.o"
+"interrupt\stm32l4xx_hal_flash_ex.o"
+"interrupt\stm32l4xx_hal_i2c_ex.o"
+"interrupt\stm32l4xx_hal_flash_ramfunc.o"
+"interrupt\stm32l4xx_hal_tim_ex.o"
+"interrupt\stm32l4xx_hal_tim.o"
+"interrupt\stm32l4xx_hal.o"
+"interrupt\stm32l4xx_hal_i2c.o"
+"interrupt\stm32l4xx_hal_pwr.o"
+"interrupt\stm32l4xx_hal_dma_ex.o"
+"interrupt\stm32l4xx_hal_pwr_ex.o"
+"interrupt\stm32l4xx_hal_cortex.o"
+"interrupt\stm32l4xx_hal_flash.o"
+"interrupt\stm32l4xx_hal_gpio.o"
+"interrupt\startup_stm32l476xx.o"
+"interrupt\system_stm32l4xx.o"
+"interrupt\main.o"
+"interrupt\stm32l4xx_it.o"
+"interrupt\stm32l4xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Interrupt\Interrupt.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Interrupt.map" -o Interrupt\Interrupt.axf

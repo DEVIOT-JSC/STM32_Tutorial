@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"adc2\stm32l4xx_hal_i2c.o"
+"adc2\stm32l4xx_hal_dma_ex.o"
+"adc2\stm32l4xx_hal.o"
+"adc2\stm32l4xx_hal_tim_ex.o"
+"adc2\stm32l4xx_hal_gpio.o"
+"adc2\stm32l4xx_hal_flash.o"
+"adc2\stm32l4xx_hal_pwr.o"
+"adc2\stm32l4xx_hal_rcc.o"
+"adc2\stm32l4xx_hal_rcc_ex.o"
+"adc2\stm32l4xx_hal_dma.o"
+"adc2\stm32l4xx_hal_flash_ex.o"
+"adc2\stm32l4xx_hal_pwr_ex.o"
+"adc2\stm32l4xx_hal_adc.o"
+"adc2\stm32l4xx_hal_adc_ex.o"
+"adc2\stm32l4xx_hal_tim.o"
+"adc2\stm32l4xx_hal_i2c_ex.o"
+"adc2\stm32l4xx_hal_flash_ramfunc.o"
+"adc2\stm32l4xx_hal_cortex.o"
+"adc2\startup_stm32l476xx.o"
+"adc2\system_stm32l4xx.o"
+"adc2\main.o"
+"adc2\stm32l4xx_hal_msp.o"
+"adc2\stm32l4xx_it.o"
+--library_type=microlib --strict --scatter "ADC2\ADC2.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC2.map" -o ADC2\ADC2.axf

@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+".\gpio\startup_stm32l476xx.o"
+".\gpio\system_stm32l4xx.o"
+".\gpio\main.o"
+".\gpio\stm32l4xx_it.o"
+".\gpio\stm32l4xx_hal_msp.o"
+".\gpio\stm32l4xx_hal_flash_ramfunc.o"
+".\gpio\stm32l4xx_hal_gpio.o"
+".\gpio\stm32l4xx_hal_i2c.o"
+".\gpio\stm32l4xx_hal_dma.o"
+".\gpio\stm32l4xx_hal_pwr_ex.o"
+".\gpio\stm32l4xx_hal_dma_ex.o"
+".\gpio\stm32l4xx_hal_tim_ex.o"
+".\gpio\stm32l4xx_hal.o"
+".\gpio\stm32l4xx_hal_rcc.o"
+".\gpio\stm32l4xx_hal_pwr.o"
+".\gpio\stm32l4xx_hal_flash_ex.o"
+".\gpio\stm32l4xx_hal_rcc_ex.o"
+".\gpio\stm32l4xx_hal_flash.o"
+".\gpio\stm32l4xx_hal_i2c_ex.o"
+".\gpio\stm32l4xx_hal_tim.o"
+".\gpio\stm32l4xx_hal_cortex.o"
+--library_type=microlib --strict --scatter ".\GPIO\GPIO.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO.map" -o .\GPIO\GPIO.axf
